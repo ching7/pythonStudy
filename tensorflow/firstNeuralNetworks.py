@@ -23,3 +23,14 @@ wt = tf.Variable(tf.random.normal([4,5],stddev=2,mean=0,seed=1))
 # mean=0: 均值为0
 # seed=1：随机种子为1
 print(wt)
+
+
+# 其他随机初始值
+zero = tf.zeros([3,2])  # 全0矩阵   3行2列
+one = tf.ones([3,2])    # 全1矩阵   3行2列
+fill = tf.fill([3,2],4) # 定值矩阵  3行2列定值4
+con = tf.constant([[7,7,7],[2,3,4]]) # 常量矩阵
+print(zero)
+print(one)
+print(fill)
+print(con)
