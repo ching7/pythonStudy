@@ -65,9 +65,15 @@ def gradient_descent(points, starting_b, starting_w, lr, num_iterations):
 # 主训练函数
 def main():
     # 加载训练集数据，这些数据是通过真实模型添加观测误差采样得到的
-    lr = 0.01 # 学习率
-    initial_b = 0 # 初始化b 为0
-    initial_w = 0 # 初始化w 为0
+
+    # 加载本地csv文件数据
+    # data =  np.genfromtxt("F:\HS_Study\pythonStudy\\tensorflow\\tensorflow2.0\data.csv", delimiter=",")
+    # print(len(data))
+    # lr = 0.0001 # 学习率-注意学习率调整（学习过大或者过小会导致梯度计算、更新出现问题）
+
+    lr = 0.01
+    initial_b = 0.1 # 初始化b 为0
+    initial_w = 0.1 # 初始化w 为0
     num_iterations = 1000 # 训练迭代次数
     # 训练优化1000 次，返回最优w*,b*和训练Loss 的下降过程
     [b, w]= gradient_descent(data, initial_b, initial_w, lr, num_iterations)
