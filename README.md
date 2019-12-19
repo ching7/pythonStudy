@@ -12,3 +12,4 @@ python学习记录demo
 ## tensorflow2.0(推荐)
 
 * tensorflo2.0的简单介绍及使用demo
+* 机器学习，深度学习demo
